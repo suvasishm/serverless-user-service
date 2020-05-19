@@ -6,9 +6,8 @@ module.exports.createUser = async (event, context) => {
   const body = JSON.parse(event.body)
   const username = body.username
   const password = body.password
-  const tableName = process.env.DYNAMODB_USER_TABLE // Todo: why this is not working
   const newUserParams = {
-    TableName: tableName,
+    TableName: process.env.DYNAMODB_USER_TABLE, // Todo: why this is not working
     Item: {
       pk: username,
       password: bcrypt.hashSync(password, 10)
