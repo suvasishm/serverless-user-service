@@ -24,7 +24,7 @@ To do so I used the previously created template as follows:
 
 Opened serverless.yml; updated service name, functions etc as it is now; make other required changes
 
-###### associating the service with the serverless account
+##### associating the service with the serverless account
 
 ```$ serverless```
 
@@ -54,7 +54,7 @@ Serverless: Successfully published your service to the Serverless Dashboard: htt
 
 ##### call the api
 
-```$ curl --request POST --url https://teek6r56w6.execute-api.us-east-1.amazonaws.com/dev/v1/user --data '{"username":"suvasish", "password":"password"}' -H 'Content-type: application/json' -i```
+```$ curl --request POST --url https://xxxx.execute-api.us-east-1.amazonaws.com/dev/v1/user --data '{"username":"suvasish", "password":"password"}' -H 'Content-type: application/json' -i```
 
 Response
 ```
