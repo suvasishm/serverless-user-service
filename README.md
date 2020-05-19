@@ -62,3 +62,5 @@ HTTP/2 201
 content-type: application/json
 ....
 ```
+
+Ref: https://www.serverless.com/learn/tutorial/user-creation/
